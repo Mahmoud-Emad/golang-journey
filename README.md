@@ -9,4 +9,4 @@
 
 
 ###### Note:
-* Every folder contain it's README file to explain what I'm doing
+* Every folder contains its README file to explain what we gonna do 
