@@ -1,0 +1,5 @@
+.go.mod
+.vscode
+.kite-installer
+.main.go.exe
+.todo-app
