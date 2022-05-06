@@ -14,5 +14,3 @@
 kubectl create -f deployment.yaml
 
 ```
-
-* Now you can see the app at `http://10.42.0.21:8080/`
