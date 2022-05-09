@@ -45,4 +45,4 @@ func main() {
 100 <nil> int
 ```
 
-### For more examples see str-to-int.go file
+### For more examples see [str-to-int.go file](https://github.com/Mahmoud-Emad/Learn-Go-With-Tests/blob/master/type-conversion/str-to-int.go)
