@@ -51,4 +51,4 @@ func main() {
 // -3.141 <nil> float64
 // strconv.ParseFloat: parsing "A-3141X": invalid syntax
 ```
-### For more examples see [str-to-int.go file](https://github.com/Mahmoud-Emad/Learn-Go-With-Tests/blob/master/type-conversion/str-float/str-to-float.go)
+### For more examples see [str-to-float.go file](https://github.com/Mahmoud-Emad/Learn-Go-With-Tests/blob/master/type-conversion/str-float/str-to-float.go)
