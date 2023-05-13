@@ -1,34 +1,36 @@
-package main 
+package main
 
-import(
+import (
 	"fmt"
 	"log"
 	"net/http"
 )
 
-func formhandler(w http.ResponseWriter, r *http.Request){
-	if err := r.ParseForm(); err!= nil {
+func formhandler(w http.ResponseWriter, r *http.Request) {
+	if err := r.ParseForm(); err != nil {
 		fmt.Fprintf(w, "ParseForm() err: %v", err)
 		return
 	}
 	fmt.Fprintf(w, "POST request successful")
-	name:= r.FormValue("name")
+	name := r.FormValue("name")
 	address := r.FormValue("address")
 	fmt.Fprintf(w, "Name = %s\n", name)
 	fmt.Fprintf(w, "Address = %s\n", address)
 }
 
-func helloHandeler(w http.ResponseWriter, r *http.Request){
+func helloHandeler(w http.ResponseWriter, r *http.Request) {
 	// hello string = "/hello"
 	// hello_slash string = "/hello"
 	if r.URL.Path != "/hello" {
 		http.Error(w, "404 Not Found Page", http.StatusNotFound)
 		return
 	}
-	if r.Method != "GET"{
+	if r.Method != "GET" {
 		http.Error(w, "Method is not allowed.", http.StatusNotFound)
 		return
 	}
+
+	fmt.Fprintf(w, "Hello!")
 }
 
 func main() {
